@@ -1,0 +1,110 @@
+/* MEDIA QUERIES FOR RESPONSIVE */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    
+    .logo {
+        padding-left: 1em;
+    }
+    
+    .header-bg { display: none; }
+    
+    .menu {
+        flex-direction: column;
+        background: #484848;
+     }
+    
+    nav {
+        top: 0;
+        left: -50px;
+        margin-bottom: 5px;
+    }
+    
+    nav a {
+        width: 100vw;
+        margin-right: 40px;
+        background: #484848;
+        border-bottom: 1px solid rgba(255, 255, 255, .45);
+        height: 60px;
+    }
+    
+    .main-content { flex-direction: column; margin-bottom: 60px; }
+    
+    .me { 
+        margin-top: 10px;
+        display: inline-flex;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+    
+    .education {
+        display: inline-flex;
+        width: 240px;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .education-title,
+    .career-title,
+    .contacts-title { margin: 40px 0; }
+    
+    .skills { 
+        position: relative;
+        bottom: 90px;
+        right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .about-me {
+        position: relative;
+        top: -80px;
+    }
+    
+    .description {
+        width: 320px;
+        margin: 20px 0;
+        word-wrap: break-word;
+    }
+    
+    .description:after {
+        top: 53px;
+        left: 110px;
+    }
+    
+    .footer { height: 350px; width: 100%; }
+    
+    .footer-wrapper { flex-direction: column; }
+    
+    .contacts, .social { 
+        margin: 20px 0;
+        width: inherit;
+    }
+
+}
+
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    
+    .social { width: 40vw; }
+    
+    #myImg {
+        position: relative;
+        left: 380px;
+        top: -300px;
+    }
+    
+    .description { width: 300px; }
+    
+    .description:after {
+        top: 51px;
+        left: 110px;
+    }
+}
